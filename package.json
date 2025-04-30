@@ -1,0 +1,31 @@
+{
+  "name": "@pickles2/pickles2-mcp",
+  "version": "0.1.0",
+  "description": "Pickles 2 Model Context Protocol (MCP) Server",
+  "main": "dist/index.js",
+  "bin": {
+    "pickles2-mcp": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "pickles2"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "zod": "^3.22.4"
+  }
+}
