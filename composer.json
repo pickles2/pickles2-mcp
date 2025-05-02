@@ -1,0 +1,43 @@
+{
+    "config": {
+        "process-timeout": 0
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "start": [
+            "@php ./tests/htdocs/standard/src_px2/.px_execute.php \"/?PX=serve&S=127.0.0.1:8080\""
+        ],
+        "start-pub": [
+            "@php ./tests/htdocs/standard/src_px2/.px_execute.php \"/?PX=serve.pub&S=127.0.0.1:8081\""
+        ]
+    },
+    "repositories": [
+    ],
+    "require-dev": {
+        "php": ">=7.3.0" ,
+        "broccoli-html-editor/broccoli-field-summernote": "~0.3",
+        "pickles2/px-fw-2.x": "~2.1",
+        "pickles2/px2-blog-kit": "~0.1.0",
+        "pickles2/px2-clover": "~0.3",
+        "pickles2/px2-dec": "~2.1",
+        "pickles2/px2-path-resolver": "~2.1",
+        "pickles2/px2-px2dthelper": "~2.2",
+        "pickles2/px2-multitheme": "~2.1",
+        "pickles2/px2-remove-attr": "~2.1",
+        "pickles2/px2-sitemapexcel": "~2.1",
+        "pickles2/px2-publish-ex": "~2.1",
+        "pickles2/px2style": "~3.0",
+        "pickles2/px2-error-reporter": "~1.0",
+        "pickles2/px2-scss": "~1.0",
+        "pickles2/px2-serve": "~1.0",
+        "vlucas/phpdotenv": "~5.6.1"
+    },
+    "extra": {
+        "px2package": {
+            "name": "Pickles 2 Sample",
+            "type": "project",
+            "path": "tests/htdocs/standard/src_px2/.px_execute.php",
+            "path_homedir": "tests/htdocs/standard/px-files/"
+        }
+    }
+}

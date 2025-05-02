@@ -136,5 +136,18 @@ out
 .yarn/install-state.gz
 .pnp.*
 
+# php, composer
+vendor/
+composer.lock
+
+# Pickles 2
+/tests/htdocs/standard/px-files/_sys/ram/
+!/tests/htdocs/standard/px-files/_sys/ram/applock/.gitkeep
+!/tests/htdocs/standard/px-files/_sys/ram/caches/.gitkeep
+!/tests/htdocs/standard/px-files/_sys/ram/data/.gitkeep
+!/tests/htdocs/standard/px-files/_sys/ram/publish/.gitkeep
+/tests/htdocs/standard/src_px2/common/px_resources/
+!/tests/htdocs/standard/src_px2/common/px_resources/.gitkeep
+
 # project
 .vscode/mcp.json

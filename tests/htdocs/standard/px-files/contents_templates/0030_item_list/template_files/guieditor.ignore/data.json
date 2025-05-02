@@ -1,0 +1,576 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "Heading"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "<p>This is a sample text with no particular content. No particular consideration has been given to the flow or structure of the text, and it is intended only as filler. In some cases, texts like this may be used for the purpose of adjusting the layout or saving space. Feel free to use it as it is not intended to have any deep meaning or impact on the reader, regardless of the context. Of course, there are no particular rules regarding the content, so any expression is acceptable as long as it does not sound unnatural when read as a whole. In this way, by repeatedly using meaningless sentences, you can ensure the necessary length and make final adjustments.</p>",
+                                "editor": ""
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            },
+                            "paragraph": {
+                                "src": "px2-p"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": "",
+                        "locked": {
+                            "contents": false,
+                            "children": false,
+                            "move": false,
+                            "delete": false
+                        }
+                    },
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "path": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

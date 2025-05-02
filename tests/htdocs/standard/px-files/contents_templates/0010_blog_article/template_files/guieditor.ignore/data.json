@@ -1,0 +1,484 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "px2style:basics/image",
+                        "fields": {
+                            "image_src": {
+                                "resKey": "",
+                                "path": "",
+                                "resType": "",
+                                "webUrl": ""
+                            },
+                            "alt_text": {
+                                "src": ""
+                            },
+                            "caption": {
+                                "src": "",
+                                "editor": ""
+                            },
+                            "framed": {
+                                "src": ""
+                            },
+                            "width": {
+                                "src": "1of1"
+                            },
+                            "align": {
+                                "src": "center"
+                            },
+                            "imagescope": {
+                                "src": ""
+                            },
+                            "paragraph": {
+                                "src": "px2-p"
+                            }
+                        },
+                        "anchor": "",
+                        "dec": "",
+                        "locked": {
+                            "contents": false,
+                            "children": false,
+                            "move": false,
+                            "delete": false
+                        }
+                    },
+                    {
+                        "modId": "px2style:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "<p>This is a sample text with no particular content. No particular consideration has been given to the flow or structure of the text, and it is intended only as filler. In some cases, texts like this may be used for the purpose of adjusting the layout or saving space. Feel free to use it as it is not intended to have any deep meaning or impact on the reader, regardless of the context. Of course, there are no particular rules regarding the content, so any expression is acceptable as long as it does not sound unnatural when read as a whole. In this way, by repeatedly using meaningless sentences, you can ensure the necessary length and make final adjustments.</p>",
+                                "editor": ""
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:lists/index",
+                        "fields": []
+                    },
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "Heading"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:basics/text",
+                        "fields": {
+                            "main": {
+                                "src": "<p>This is a sample text with no particular content. No particular consideration has been given to the flow or structure of the text, and it is intended only as filler. In some cases, texts like this may be used for the purpose of adjusting the layout or saving space. Feel free to use it as it is not intended to have any deep meaning or impact on the reader, regardless of the context. Of course, there are no particular rules regarding the content, so any expression is acceptable as long as it does not sound unnatural when read as a whole. In this way, by repeatedly using meaningless sentences, you can ensure the necessary length and make final adjustments.</p>"
+                            },
+                            "text-align": {
+                                "src": ""
+                            },
+                            "font-size": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "Heading"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:medias/float",
+                        "fields": {
+                            "lr": {
+                                "src": "r"
+                            },
+                            "image-size": {
+                                "src": "1of3"
+                            },
+                            "media": [
+                                {
+                                    "modId": "px2style:medias/image-media",
+                                    "fields": {
+                                        "image_src": {
+                                            "resKey": "",
+                                            "path": "",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "alt_text": "",
+                                        "caption": {
+                                            "src": "",
+                                            "editor": "markdown"
+                                        },
+                                        "framed": ""
+                                    }
+                                }
+                            ],
+                            "body_rect": {
+                                "src": ""
+                            },
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "This module creates a media display area that wraps text.\n\nSelect the wrap direction, either right or left. Media size can be selected from 1/2, 1/3, and 1/4 width sizes.\n\nYou can also choose to wrap the text area or make it rectangular.\n",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": {
+                                            "src": "px2-p"
+                                        },
+                                        "text-align": {
+                                            "src": ""
+                                        },
+                                        "font-size": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "heading": [
+                                {
+                                    "modId": "px2style:sections/hx",
+                                    "fields": {
+                                        "hx": {
+                                            "src": "3"
+                                        },
+                                        "main": {
+                                            "src": "Heading"
+                                        },
+                                        "sub": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": "",
+                                    "locked": {
+                                        "contents": false,
+                                        "children": false,
+                                        "move": false,
+                                        "delete": false
+                                    }
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:medias/float",
+                        "fields": {
+                            "lr": {
+                                "src": "l"
+                            },
+                            "image-size": {
+                                "src": "1of3"
+                            },
+                            "media": [
+                                {
+                                    "modId": "px2style:medias/image-media",
+                                    "fields": {
+                                        "image_src": {
+                                            "resKey": "",
+                                            "path": "",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "alt_text": "",
+                                        "caption": {
+                                            "src": "",
+                                            "editor": "markdown"
+                                        },
+                                        "framed": ""
+                                    }
+                                }
+                            ],
+                            "body_rect": {
+                                "src": ""
+                            },
+                            "main": [
+                                {
+                                    "modId": "px2style:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "This module creates a media display area that wraps text.\n\nSelect the wrap direction, either right or left. Media size can be selected from 1/2, 1/3, and 1/4 width sizes.\n\nYou can also choose to wrap the text area or make it rectangular.\n",
+                                            "editor": "markdown"
+                                        },
+                                        "paragraph": {
+                                            "src": "px2-p"
+                                        },
+                                        "text-align": {
+                                            "src": ""
+                                        },
+                                        "font-size": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ],
+                            "heading": [
+                                {
+                                    "modId": "px2style:sections/hx",
+                                    "fields": {
+                                        "hx": {
+                                            "src": "3"
+                                        },
+                                        "main": {
+                                            "src": "Heading"
+                                        },
+                                        "sub": {
+                                            "src": ""
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": "",
+                                    "locked": {
+                                        "contents": false,
+                                        "children": false,
+                                        "move": false,
+                                        "delete": false
+                                    }
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:sections/hx",
+                        "fields": {
+                            "hx": {
+                                "src": "2"
+                            },
+                            "main": {
+                                "src": "Heading"
+                            },
+                            "sub": {
+                                "src": ""
+                            }
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "px2style:grids/grid",
+                        "fields": {
+                            "col": [
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "resKey": "",
+                                                        "path": "",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": "",
+                                                "locked": {
+                                                    "contents": false,
+                                                    "children": false,
+                                                    "move": false,
+                                                    "delete": false
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "resKey": "",
+                                                        "path": "",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "resKey": "",
+                                                        "path": "",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "px2style:grids/grid",
+                                    "fields": {
+                                        "column-width": "1of4",
+                                        "main": [
+                                            {
+                                                "modId": "px2style:basics/image",
+                                                "fields": {
+                                                    "image_src": {
+                                                        "resKey": "",
+                                                        "path": "",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "alt_text": "",
+                                                    "caption": "",
+                                                    "framed": "",
+                                                    "width": "",
+                                                    "align": ""
+                                                }
+                                            },
+                                            {
+                                                "modId": "px2style:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "<p>This is a sample text with no particular content.</p>"
+                                                    },
+                                                    "text-align": {
+                                                        "src": ""
+                                                    },
+                                                    "font-size": {
+                                                        "src": ""
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "subModName": "col",
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
