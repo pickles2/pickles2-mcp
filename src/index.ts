@@ -1,6 +1,7 @@
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import px2agent from 'px2agent';
 import { Command } from 'commander';
 
 const version = "0.1.0";
@@ -18,13 +19,31 @@ program
 	.option('-d, --debug', 'output extra debugging')
 	.requiredOption('--entry-script <path>', '[required] entry script for the Pickles 2.')
 	.action(async (cliOptions) => {
+		const px2proj = px2agent.createProject(cliOptions.entryScript);
 
 		// Add an addition tool
-		server.tool("add",
-			{ a: z.number(), b: z.number() },
-			async ({ a, b }) => ({
-				content: [{ type: "text", text: String(a + b) }]
-			})
+		server.tool("clearcache",
+			"Clear the Pickles 2 cache.",
+			async () => {
+				// Clear the cache
+				return new Promise((resolve: Function, reject: Function) => {
+					px2proj.clearcache({
+						"success": function(stdout: string){
+							// console.log(stdout);
+						},
+						"complete":function(stdout: string){
+							resolve(stdout);
+						}
+					});
+				}).then((stdout) => {
+					return {
+						content: [{
+							type: "text",
+							text: "Cache cleared." + stdout,
+						}]
+					};
+				});
+			}
 		);
 
 		// Add a dynamic greeting resource

@@ -1,0 +1,1 @@
+declare module 'px2agent';
