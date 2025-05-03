@@ -55,8 +55,8 @@ program
 					// Clear the cache
 					logger.info('Run command: ' + tool.name);
 					const stdout = await tool.function(parameters);
-					logger.info('Run command: ' + tool.name + "; done" );
 					logger.debug(stdout);
+					logger.info('Run command: ' + tool.name + "; done" );
 					return {
 						content: [{
 							type: "text",
