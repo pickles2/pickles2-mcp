@@ -5,6 +5,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import px2agent from 'px2agent';
 import { Command } from 'commander';
+import { Logger } from './includes/Logger/Logger.js';
 
 const version = "0.1.0";
 const program = new Command();
@@ -18,10 +19,20 @@ const server = new McpServer({
 program
 	.version(version)
 	.description('A MCP server for Pickles 2')
+	.requiredOption('--entry-script <path>', '[Required] Entry script for the Pickles 2.')
 	.option('-d, --debug', 'output extra debugging')
-	.requiredOption('--entry-script <path>', '[required] entry script for the Pickles 2.')
+	.option('--log-path <path>', 'Log output path.')
 	.action(async (cliOptions) => {
 		const px2proj = px2agent.createProject(cliOptions.entryScript);
+
+		const logger = new Logger({
+			debugMode: cliOptions.debug,
+			logPath: cliOptions.logPath,
+		});
+		logger.info('Pickles 2 MCP server started.');
+		logger.info('Entry script: ' + cliOptions.entryScript);
+		logger.info('Debug mode: ' + cliOptions.debug);
+		logger.info('Log path: ' + cliOptions.logPath);
 
 		// Add an addition tool
 		server.tool("clearcache",
