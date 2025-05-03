@@ -29,8 +29,9 @@ program
     logger.info('Log path: ' + cliOptions.logPath);
     logger.info(cliOptions);
     // Add an addition tool
-    server.tool("clearcache", "Clear the Pickles 2 cache.", async () => {
+    server.tool("pickles2-clearcache", "Clear the Pickles 2 cache.", async () => {
         // Clear the cache
+        logger.info('Run command: ' + "pickles2-clearcache");
         return new Promise((resolve, reject) => {
             px2proj.clearcache({
                 "success": function (stdout) {
