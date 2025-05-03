@@ -4,6 +4,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import px2agent from 'px2agent';
 import { Command } from 'commander';
 import { Logger } from './includes/Logger/Logger.js';
+import { ClearCache } from './includes/Tools/ClearCache.js';
 const version = "0.1.0";
 const program = new Command();
 // Create an MCP server
@@ -29,26 +30,19 @@ program
     logger.info('Log path: ' + cliOptions.logPath);
     logger.info(cliOptions);
     // Add an addition tool
-    server.tool("pickles2-clearcache", "Clear the Pickles 2 cache.", async () => {
+    server.tool("pickles2-clearcache", "Clear the Pickles 2 cache.", async (extra) => {
         // Clear the cache
         logger.info('Run command: ' + "pickles2-clearcache");
-        return new Promise((resolve, reject) => {
-            px2proj.clearcache({
-                "success": function (stdout) {
-                    // console.log(stdout);
-                },
-                "complete": function (stdout) {
-                    resolve(stdout);
-                }
-            });
-        }).then((stdout) => {
-            return {
-                content: [{
-                        type: "text",
-                        text: "Cache cleared." + stdout,
-                    }]
-            };
-        });
+        logger.info(extra);
+        const clearCache = new ClearCache(px2proj, logger);
+        const stdout = await clearCache.clearcache();
+        logger.info('Run command: ' + "pickles2-clearcache; " + "done");
+        return {
+            content: [{
+                    type: "text",
+                    text: "Cache cleared." + "\n\n" + stdout,
+                }]
+        };
     });
     // Start receiving messages on stdin and sending messages on stdout
     const transport = new StdioServerTransport();

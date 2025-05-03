@@ -6,6 +6,7 @@ import { z } from "zod";
 import px2agent from 'px2agent';
 import { Command } from 'commander';
 import { Logger } from './includes/Logger/Logger.js';
+import { ClearCache } from './includes/Tools/ClearCache.js';
 
 const version = "0.1.0";
 const program = new Command();
@@ -36,29 +37,22 @@ program
 		logger.info(cliOptions);
 
 		// Add an addition tool
-		server.tool("pickles2-clearcache",
+		server.tool(
+			"pickles2-clearcache",
 			"Clear the Pickles 2 cache.",
-			async () => {
+			async (extra: any) => {
 				// Clear the cache
 				logger.info('Run command: ' + "pickles2-clearcache");
-
-				return new Promise((resolve: Function, reject: Function) => {
-					px2proj.clearcache({
-						"success": function(stdout: string){
-							// console.log(stdout);
-						},
-						"complete":function(stdout: string){
-							resolve(stdout);
-						}
-					});
-				}).then((stdout) => {
-					return {
-						content: [{
-							type: "text",
-							text: "Cache cleared." + stdout,
-						}]
-					};
-				});
+				logger.info(extra);
+				const clearCache = new ClearCache(px2proj, logger);
+				const stdout: string = await clearCache.clearcache();
+				logger.info('Run command: ' + "pickles2-clearcache; " + "done" );
+				return {
+					content: [{
+						type: "text",
+						text: "Cache cleared." + "\n\n" + stdout,
+					}]
+				};
 			}
 		);
 
