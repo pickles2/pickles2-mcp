@@ -37,24 +37,35 @@ program
 		logger.info(cliOptions);
 
 		// Add an addition tool
-		server.tool(
-			"pickles2-clearcache",
-			"Clear the Pickles 2 cache.",
-			async (extra: any) => {
-				// Clear the cache
-				logger.info('Run command: ' + "pickles2-clearcache");
-				logger.info(extra);
+		[{
+			name: "pickles2-clearcache",
+			description: "Clear the Pickles 2 cache.",
+			parameters: {},
+			function: async (parameters: any) => {
 				const clearCache = new ClearCache(px2proj, logger);
 				const stdout: string = await clearCache.clearcache();
-				logger.info('Run command: ' + "pickles2-clearcache; " + "done" );
-				return {
-					content: [{
-						type: "text",
-						text: "Cache cleared." + "\n\n" + stdout,
-					}]
-				};
-			}
-		);
+				return stdout;
+			},
+		}].forEach((tool) => {
+			server.tool(
+				tool.name,
+				tool.description,
+				tool.parameters,
+				async (parameters) => {
+					// Clear the cache
+					logger.info('Run command: ' + tool.name);
+					const stdout = await tool.function(parameters);
+					logger.info('Run command: ' + tool.name + "; done" );
+					logger.debug(stdout);
+					return {
+						content: [{
+							type: "text",
+							text: stdout,
+						}]
+					};
+				},
+			);
+		});
 
 		// Start receiving messages on stdin and sending messages on stdout
 		const transport = new StdioServerTransport();
