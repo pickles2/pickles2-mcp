@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import px2agent from 'px2agent';
 import { Command } from 'commander';
@@ -50,13 +50,6 @@ program
             };
         });
     });
-    // Add a dynamic greeting resource
-    server.resource("greeting", new ResourceTemplate("greeting://{name}", { list: undefined }), async (uri, { name }) => ({
-        contents: [{
-                uri: uri.href,
-                text: `Hello, ${name}!`
-            }]
-    }));
     // Start receiving messages on stdin and sending messages on stdout
     const transport = new StdioServerTransport();
     await server.connect(transport);
