@@ -23,10 +23,11 @@ program
         debugMode: cliOptions.debug,
         logPath: cliOptions.logPath,
     });
-    logger.info('Pickles 2 MCP server started.');
+    logger.info('===== Pickles 2 MCP server started =====');
     logger.info('Entry script: ' + cliOptions.entryScript);
     logger.info('Debug mode: ' + cliOptions.debug);
     logger.info('Log path: ' + cliOptions.logPath);
+    logger.info(cliOptions);
     // Add an addition tool
     server.tool("clearcache", "Clear the Pickles 2 cache.", async () => {
         // Clear the cache
