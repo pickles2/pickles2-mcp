@@ -6,16 +6,16 @@
 
 ```json
 {
-    "mcpServers": {
+	"mcpServers": {
 		"Pickles 2 MCP": {
 			"type": "stdio",
 			"command": "npx",
 			"args": [
-                "pickles2-mcp"
+				"pickles2-mcp",
 				"--entry-script", "/path_to_your/src_px2/.px_execute.php"
 			]
 		}
-    }
+	}
 }
 ```
 
