@@ -22,7 +22,7 @@
 
 ## 更新履歴 - Change log
 
-### pickles2-mcp v0.1.0 (リリース日未定)
+### pickles2-mcp v0.1.0 (2025年5月6日)
 
 - Initial release.
 

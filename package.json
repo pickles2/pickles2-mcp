@@ -1,10 +1,10 @@
 {
-  "name": "@pickles2/pickles2-mcp",
+  "name": "pickles2-mcp",
   "version": "0.1.0",
   "description": "Pickles 2 Model Context Protocol (MCP) Server",
   "main": "dist/index.js",
   "bin": {
-    "@pickles2/pickles2-mcp": "./dist/index.js"
+    "pickles2-mcp": "./dist/index.js"
   },
   "type": "module",
   "scripts": {
