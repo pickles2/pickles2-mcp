@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import px2agent from 'px2agent';
+import { px2agent } from 'px2agent';
 import { Command } from 'commander';
 import { Logger } from './includes/Logger/Logger.js';
-import { ClearCache } from './includes/Tools/ClearCache.js';
 const version = "0.1.0";
 const program = new Command();
 // Create an MCP server
@@ -35,8 +34,7 @@ program
             description: "Clear the Pickles 2 cache.",
             parameters: {},
             function: async (parameters) => {
-                const clearCache = new ClearCache(px2proj, logger);
-                const stdout = await clearCache.clearcache();
+                const stdout = await px2proj.clearcache();
                 return stdout;
             },
         }].forEach((tool) => {

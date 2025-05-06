@@ -12,7 +12,8 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@modelcontextprotocol/sdk/*": ["node_modules/@modelcontextprotocol/sdk/dist/*"]
+      "@modelcontextprotocol/sdk/*": ["node_modules/@modelcontextprotocol/sdk/dist/*"],
+      "px2agent": ["node_modules/px2agent/dist/px2agent.d.ts"]
     }
   },
   "include": ["src/**/*"],
